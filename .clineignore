@@ -1,0 +1,111 @@
+# .clineignore ファイル
+# このファイルは、Clineがコードベースを分析する際に無視するファイルとディレクトリを指定します。
+# .gitignoreと同様に、パターンマッチングを使用して除外するファイルを指定します。
+
+# Dependencies（依存関係）
+# プロジェクトの依存関係に関連するファイルやディレクトリを除外します。
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+vendor/
+**/vendor/
+.yarn/
+package-lock.json
+yarn.lock
+composer.lock
+Gemfile.lock
+
+# Build outputs（ビルド出力）
+# ビルドプロセスによって生成される一時的なファイルやディレクトリを除外します。
+/build/
+/dist/
+/.next/
+/out/
+/target/
+/bin/
+/obj/
+/public/build/
+/.cache/
+/.output/
+
+# Testing（テスト関連）
+# テスト実行に関連するファイルやディレクトリを除外します。
+/coverage/
+/.nyc_output/
+/test-results/
+/.pytest_cache/
+/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables（環境変数）
+# 環境変数や設定ファイル、クラウド設定などを除外します。
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+.aws/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terragrunt-cache/
+
+# Large data files（大きなデータファイル）
+# 大きなデータファイルや生成されたデータファイルを除外します。
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.avro
+*.pb
+*.bin
+*.dat
+*.bak
+*.log
+*.sql
+*.dump
+
+# IDE and editor files（IDE・エディタファイル）
+# 各種IDE・エディタが生成する設定ファイルやディレクトリを除外します。
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.project
+.classpath
+.settings/
+*.sublime-*
+
+# Temporary files（一時ファイル）
+# 一時的に生成されるファイルやディレクトリを除外します。
+/tmp/
+/temp/
+*.tmp
+*.temp
+.cache/
+
+# Documentation（ドキュメント）
+# ドキュメントファイルやディレクトリを除外します。
+/docs/
+/doc/
+/documentation/
+*.md
+*.pdf
+*.doc
+*.docx
+
+# Compiled files（コンパイル済みファイル）
+# コンパイルされたバイナリファイルを除外します。
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.out
