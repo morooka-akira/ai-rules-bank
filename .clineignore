@@ -91,16 +91,6 @@ Thumbs.db
 *.temp
 .cache/
 
-# Documentation（ドキュメント）
-# ドキュメントファイルやディレクトリを除外します。
-/docs/
-/doc/
-/documentation/
-*.md
-*.pdf
-*.doc
-*.docx
-
 # Compiled files（コンパイル済みファイル）
 # コンパイルされたバイナリファイルを除外します。
 *.class
